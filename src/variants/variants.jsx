@@ -8,6 +8,6 @@ export const navVariants = {
     last: {opacity: 1 , transition: {duration: 2}}
 }
 export const mobileNavVariants = {
-    first: {y: -15},
-    last: {y:0 , transition: {type: 'spring' , stiffness: 70}}
+    first: {y: -5 , opacity: 0},
+    last: {y:0 , opacity: 1 , transition: {type: 'spring' , damping: 15}}
 }
