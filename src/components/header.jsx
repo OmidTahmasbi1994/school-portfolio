@@ -15,12 +15,18 @@ export const Header = () => {
   return (
     <nav className="sticky top-0 left-0 bg-[#ffffff]/50 backdrop-blur-md text-[#191970] border-solid border-[#191970]/15 border-b-3">
       <div className="flex flex-row justify-between items-center p-9 max-md:p-7">
-        <motion.div variants={navVariants} initial="first" animate="last">
+        <motion.div
+          variants={navVariants}
+          initial="first"
+          animate="last"
+          className="flex flex-col justify-center items-start gap-2"
+        >
           <Link to="/" onClick={() => setRouteTitle("اخبار و اطلاعیه ها")}>
             <h1 className="text-2xl max-md:text-lg text-[#191970] font-semibold">
               دبستان آیت الله غفاری
             </h1>
           </Link>
+          <h5 className="text-xs">آموزش و پرورش منطقه بلداجی</h5>
         </motion.div>
         <motion.div
           variants={navVariants}
@@ -34,11 +40,20 @@ export const Header = () => {
           >
             مدیریت آموزشگاه
           </Link>
-          <Link to="/achivements" onClick={() => setRouteTitle("جوایز و افتخارات")}>
+          <Link
+            to="/achivements"
+            onClick={() => setRouteTitle("جوایز و افتخارات")}
+          >
             جوایز و افتخارات
           </Link>
           <Link to="/arts" onClick={() => setRouteTitle("فرهنگ و هنر")}>
             فرهنگ و هنر
+          </Link>
+          <Link
+            to="/connection"
+            onClick={() => setRouteTitle("راه‌های ارتباطی")}
+          >
+            راه‌های ارتباطی
           </Link>
         </motion.div>
         <motion.p
@@ -47,7 +62,7 @@ export const Header = () => {
           animate="last"
           whileHover="hover"
           onClick={() => setShowMobileNav(!showMobileNav)}
-          className="md:hidden text-lg cursor-pointer"
+          className="md:hidden text-xl cursor-pointer"
         >
           {showMobileNav ? (
             <FontAwesomeIcon icon={faXmark} />
@@ -56,7 +71,12 @@ export const Header = () => {
           )}
         </motion.p>
       </div>
-      {showMobileNav && <MobileNav setShowMobileNav={setShowMobileNav} setRouteTitle={setRouteTitle}/>}
+      {showMobileNav && (
+        <MobileNav
+          setShowMobileNav={setShowMobileNav}
+          setRouteTitle={setRouteTitle}
+        />
+      )}
       <div className="text-center p-5 border-solid border-[#191970]/15 border-t-3">
         <h1 className="max-md:text-md text-[#191970] font-semibold">
           {routeTitle}
@@ -66,7 +86,7 @@ export const Header = () => {
   );
 };
 
-const MobileNav = ({setShowMobileNav , setRouteTitle}) => {
+const MobileNav = ({ setShowMobileNav, setRouteTitle }) => {
   return (
     <motion.div
       variants={mobileNavVariants}
@@ -100,6 +120,15 @@ const MobileNav = ({setShowMobileNav , setRouteTitle}) => {
         }}
       >
         فرهنگ و هنر
+      </Link>
+      <Link
+        to="/connection"
+        onClick={() => {
+          setShowMobileNav(false);
+          setRouteTitle("راه‌های ارتباطی");
+        }}
+      >
+        راه‌های ارتباطی
       </Link>
     </motion.div>
   );

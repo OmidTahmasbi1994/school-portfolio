@@ -5,6 +5,7 @@ import {Home} from './routes/home'
 import {Manage} from './routes/manage'
 import {Achivements} from './routes/achivments'
 import {Arts} from './routes/arts'
+import {Connection} from './routes/connection'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/management" element={<Manage/>} />
           <Route path="/achivements" element={<Achivements/>} />
           <Route path="/arts" element={<Arts/>} />
+          <Route path="/connection" element={<Connection/>} />
         </Routes>
       </AnimatePresence>
     </div>
