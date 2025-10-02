@@ -2,7 +2,7 @@ import warning_1 from "../assets/warning_1.jpg";
 
 export const Home = () => {
   return (
-    <div className="w-full flex flex-col justify-start items-center gap-20 max-md:mt-15 p-10">
+    <div className="w-full flex flex-col justify-start items-center gap-20 max-md:mt-15 max-md:p-10">
       <section className="flex flex-col justify-center items-center p-5 bg-gray-100/75 border-solid border-[#191970]/25 border-1 rounded-2xl shadow-gray-400 shadow-lg">
         <div className="flex flex-row justify-center p-2">
           <h2 className="max-md:text-sm text-[#191970] font-semibold">
@@ -22,7 +22,7 @@ export const Home = () => {
           </p>
         </div>
         <div className="w-full border-solid border-t-1 border-gray-300">
-          <p className="mt-3 px-5 max-md:text-[10px] text-end font-[BYekan]">1404/10/22</p>
+          <p className="mt-4 px-1 max-md:text-[10px] text-end font-[BYekan]">1404/10/22</p>
         </div>
       </section>
     </div>

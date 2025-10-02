@@ -21,7 +21,13 @@ export const Header = () => {
           animate="last"
           className="flex flex-col justify-center items-start gap-2"
         >
-          <Link to="/" onClick={() => setRouteTitle("اخبار و اطلاعیه ها")}>
+          <Link
+            to="/"
+            onClick={() => {
+              setRouteTitle("اخبار و اطلاعیه ها");
+              setShowMobileNav(false);
+            }}
+          >
             <h1 className="text-2xl max-md:text-lg text-[#191970] font-semibold">
               دبستان آیت الله غفاری
             </h1>
