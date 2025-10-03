@@ -83,8 +83,8 @@ export const Header = () => {
           setRouteTitle={setRouteTitle}
         />
       )}
-      <div className="text-center p-5 border-solid border-[#191970]/15 border-t-3">
-        <h1 className="max-md:text-md text-[#191970] font-semibold">
+      <div className="text-center p-3 border-solid border-[#191970]/15 border-t-3">
+        <h1 className="max-md:text-sm text-[#191970] font-semibold">
           {routeTitle}
         </h1>
       </div>
@@ -98,7 +98,7 @@ const MobileNav = ({ setShowMobileNav, setRouteTitle }) => {
       variants={mobileNavVariants}
       initial="first"
       animate="last"
-      className="md:hidden flex flex-col justify-center items-center pt-5 pb-10 gap-7 text-md font-semibold"
+      className="md:hidden flex flex-col justify-center items-center pt-5 pb-10 gap-7 text-sm font-semibold"
     >
       <Link
         to="/management"
