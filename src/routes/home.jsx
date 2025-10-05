@@ -6,7 +6,7 @@ export const Home = () => {
     <div className="w-full flex flex-col justify-start items-center gap-10 mb-15 mt-10 max-md:mt-5 max-md:p-15 md:px-25 lg:px-40">
       <section className="flex flex-col justify-center items-center p-5 md:w-[70%] bg-gray-100/75 border-solid border-[#191970]/25 border-1 rounded-2xl shadow-gray-400 shadow-lg">
         <div className="flex flex-row justify-center p-2">
-          <h2 className="max-md:text-xs md:text-sm text-[#191970] font-semibold text-center">
+          <h2 className="max-md:text-xs lg:text-sm max-lg:text-xs text-[#191970] font-semibold text-center">
             عرض تبریک آغاز سال تحصیلی جدید و هفته دفاع مقدس توسط پژوهش سرای امام
             صادق بلداجی
           </h2>
@@ -15,7 +15,7 @@ export const Home = () => {
           <div className="max-md:w-[250px] md:w-[300px]">
             <img className="rounded-2xl" src={post2} />
           </div>
-          <p className="p-3 max-md:text-xs md:text-sm max-md:leading-5 text-start font-[tahoma]">
+          <p className="p-3 max-md:text-xs lg:text-sm max-lg:text-xs max-md:leading-5 text-start font-[tahoma]">
             با سلام و عرض تبریک به مناسبت آغاز سال تحصیلی جدید.
             <br />
             انشاالله سالی پر از امید جهت دستیابی به قله های بلند پیشرفت آموزشو
@@ -23,7 +23,7 @@ export const Home = () => {
           </p>
         </div>
         <div className="w-full border-solid border-t-1 border-gray-300">
-          <p className="mt-4 px-3 max-md:text-[10px] md:text-sm text-end font-[BYekan]">
+          <p className="mt-4 px-3 max-md:text-[10px] lg:text-sm max-lg:text-[10px] text-end font-[BYekan]">
             1404/7/1
           </p>
         </div>
@@ -31,7 +31,7 @@ export const Home = () => {
 
       <section className="flex flex-col justify-center items-center p-5 md:w-[70%] bg-gray-100/75 border-solid border-[#191970]/25 border-1 rounded-2xl shadow-gray-400 shadow-lg">
         <div className="flex flex-row justify-center p-2">
-          <h2 className="max-md:text-xs md:text-sm text-[#191970] font-semibold text-center">
+          <h2 className="max-md:text-xs lg:text-sm max-lg:text-xs text-[#191970] font-semibold text-center">
             ساعات جدید آغاز به کار از ابتدای مهر{" "}
             <span className="font-[BYekan]">1404</span>
           </h2>
@@ -40,14 +40,14 @@ export const Home = () => {
           <div className="max-md:w-[250px] md:w-[300px]">
             <img className="rounded-2xl" src={post1} />
           </div>
-          <p className="p-3 max-md:text-xs md:text-sm max-md:leading-5 text-start font-[tahoma]">
+          <p className="p-3 max-md:text-xs lg:text-sm max-lg:text-xs max-md:leading-5 text-start font-[tahoma]">
             علاءالدین رفیع‌زاده، رئیس سازمان اداری و استخدامی ساعات جدید آغاز به
             کار از ابتدای مهر <span className="font-[BYekan]">1404</span> ر
             اعلام کرد.
           </p>
         </div>
         <div className="w-full border-solid border-t-1 border-gray-300">
-          <p className="mt-4 px-3 max-md:text-[10px] md:text-sm text-end font-[BYekan]">
+          <p className="mt-4 px-3 max-md:text-[10px] lg:text-sm max-lg:text-[10px] text-end font-[BYekan]">
             1404/7/1
           </p>
         </div>
