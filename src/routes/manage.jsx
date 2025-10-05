@@ -39,7 +39,7 @@ export const Manage = () => {
               </div>
               <div className="flex flex-col justify-center items-center mt-3 gap-2 text-[#191970]">
                 <p className="max-md:text-xs font-semibold">
-                  محمود نادری
+                  محمود مردانی
                 </p>
                 <p className="max-md:text-xs font-semibold max-md:mt-2">
                   تلفن تماس :

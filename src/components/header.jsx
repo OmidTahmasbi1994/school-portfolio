@@ -28,7 +28,7 @@ export const Header = () => {
               setShowMobileNav(false);
             }}
           >
-            <h1 className="text-2xl max-md:text-lg text-[#191970] font-semibold">
+            <h1 className="text-2xl max-md:text-lg max-lg:text-lg text-[#191970] font-semibold">
               دبستان آیت الله غفاری
             </h1>
           </Link>
@@ -38,7 +38,7 @@ export const Header = () => {
           variants={navVariants}
           initial="first"
           animate="last"
-          className="max-md:hidden flex flex-row justify-center items-center gap-7 text-md"
+          className="max-md:hidden flex flex-row justify-center items-center gap-5 text-sm font-semibold max-lg:text-xs max-lg:gap-4"
         >
           <Link
             to="/management"
@@ -84,7 +84,7 @@ export const Header = () => {
         />
       )}
       <div className="text-center p-3 border-solid border-[#191970]/15 border-t-3">
-        <h1 className="max-md:text-sm text-[#191970] font-semibold">
+        <h1 className="max-md:text-sm max-lg:text-sm text-[#191970] font-semibold">
           {routeTitle}
         </h1>
       </div>
